@@ -7,15 +7,40 @@ mkdir 01scripts
 mv command_history.sh 01scripts/
 mv *fastq 00data/
 mkdir 02results
-mkdir 02results/fastqc_shorts
-mkdir 02results/fastqc_longs
+mkdir 03final_reports 
+
+
 
 ###### PREGUNTA 1. ######
-# FASTQC (short reads)
- fastqc 00data/bs_illumina_R?.fastq -o 02results/fastqc_shorts/
+# FASTQC (short reads) (PRE)
+mkdir 02results/fastqc_shorts
+fastqc 00data/bs_illumina_R?.fastq -o 02results/fastqc_shorts/
+
+
 # Trimmomatic
 
+mkdir 02results/trimmomatic
 
+trimmomatic PE \
+-trimlog 02results/trimmomatic/log.txt \
+-threads 6 \
+00data/bs_illumina_R1.fastq \
+00data/bs_illumina_R2.fastq \
+02results/trimmomatic/trimmed_1P.fastq \
+02results/trimmomatic/trimmed_1U.fastq \
+02results/trimmomatic/trimmed_2P.fastq \
+02results/trimmomatic/trimmed_2U.fastq \
+ILLUMINACLIP:TruSeq3-PE.fa:2:30:10 \
+LEADING:3 \
+TRAILING:3 \
+SLIDINGWINDOW:4:15 \
+HEADCROP:12 \
+MINLEN:50
+
+# FASTQC (short reads) (POST)
+fastqc 02results/trimmomatic/trimmed_1P.fastq 02results/trimmomatic/trimmed_2P.fastq -o 02results/fastqc_shorts/
 
 # FASTQC (long reads)
+mkdir 02results/fastqc_longs
 fastqc 00data/bs_reads_nanopore.fastq -o 02results/fastqc_longs/
+
