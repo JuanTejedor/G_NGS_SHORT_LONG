@@ -1,0 +1,61 @@
+/home/juantejedor/miniconda3/envs/medflyuniqua/bin/quast 02results/unicycler/assembly.fasta -m 10000 -t 10 -o 02results/unicycler/quast
+
+Version: 5.2.0
+
+System information:
+  OS: Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35 (linux_64)
+  Python version: 3.9.15
+  CPUs number: 12
+
+Started: 2024-01-31 19:26:32
+
+Logging to /home/juantejedor/G_NGS_SHORT_LONG/02results/unicycler/quast/quast.log
+
+CWD: /home/juantejedor/G_NGS_SHORT_LONG
+Main parameters: 
+  MODE: default, threads: 10, min contig length: 10000, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Contigs:
+  Pre-processing...
+  02results/unicycler/assembly.fasta ==> assembly
+
+2024-01-31 19:26:33
+Running Basic statistics processor...
+  Contig files: 
+    assembly
+  Calculating N50 and L50...
+    assembly, N50 = 1072109, L50 = 2, auN = 860268.8, Total length = 3979238, GC % = 43.80, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/juantejedor/G_NGS_SHORT_LONG/02results/unicycler/quast/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/juantejedor/G_NGS_SHORT_LONG/02results/unicycler/quast/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/juantejedor/G_NGS_SHORT_LONG/02results/unicycler/quast/basic_stats/GC_content_plot.pdf
+  Drawing assembly GC content plot...
+    saved to /home/juantejedor/G_NGS_SHORT_LONG/02results/unicycler/quast/basic_stats/assembly_GC_content_plot.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2024-01-31 19:26:33
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2024-01-31 19:26:33
+RESULTS:
+  Text versions of total report are saved to /home/juantejedor/G_NGS_SHORT_LONG/02results/unicycler/quast/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/juantejedor/G_NGS_SHORT_LONG/02results/unicycler/quast/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/juantejedor/G_NGS_SHORT_LONG/02results/unicycler/quast/report.html
+  PDF version (tables and plots) is saved to /home/juantejedor/G_NGS_SHORT_LONG/02results/unicycler/quast/report.pdf
+  Icarus (contig browser) is saved to /home/juantejedor/G_NGS_SHORT_LONG/02results/unicycler/quast/icarus.html
+  Log is saved to /home/juantejedor/G_NGS_SHORT_LONG/02results/unicycler/quast/quast.log
+
+Finished: 2024-01-31 19:26:33
+Elapsed time: 0:00:00.963041
+NOTICEs: 1; WARNINGs: 1; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

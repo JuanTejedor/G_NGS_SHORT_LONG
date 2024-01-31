@@ -76,3 +76,36 @@ unicycler \
 -o 02results/unicycler \
 -t 6
 # ruta ensamblaje: 02results/unicycler/assembly.fasta
+
+
+###### PREGUNTA 6. ######
+# ESTADÍSTICAS SEQSTATS Y QUAST (ensamblaje FLYE + MEDAKA + UNICYCLER)
+# FLYE
+mkdir 02results/flye/quast
+mkdir 02results/flye/seqstats
+quast \
+02results/flye/assembly.fasta \
+-m 10000 \
+-t 10 \
+-o 02results/flye/quast
+seqstats 02results/flye/assembly.fasta > 02results/flye/seqstats/stats.txt
+
+# MEDAKA
+mkdir 02results/medaka/quast
+mkdir 02results/medaka/seqstats
+quast \
+02results/medaka/consensus.fasta \
+-m 10000 \
+-t 10 \
+-o 02results/medaka/quast
+seqstats 02results/medaka/consensus.fasta > 02results/medaka/seqstats/stats.txt
+
+# UNICYCLER
+mkdir 02results/unicycler/quast
+mkdir 02results/unicycler/seqstats
+quast \
+02results/unicycler/assembly.fasta \
+-m 10000 \
+-t 10 \
+-o 02results/unicycler/quast
+seqstats 02results/unicycler/assembly.fasta > 02results/unicycler/seqstats/stats.txt

@@ -1,0 +1,23 @@
+Assembly	consensus
+# contigs (>= 0 bp)	21
+# contigs (>= 1000 bp)	21
+# contigs (>= 5000 bp)	21
+# contigs (>= 10000 bp)	21
+# contigs (>= 25000 bp)	17
+# contigs (>= 50000 bp)	13
+Total length (>= 0 bp)	3981627
+Total length (>= 1000 bp)	3981627
+Total length (>= 5000 bp)	3981627
+Total length (>= 10000 bp)	3981627
+Total length (>= 25000 bp)	3925858
+Total length (>= 50000 bp)	3800521
+# contigs	21
+Largest contig	852699
+Total length	3981627
+GC (%)	43.92
+N50	515983
+N90	149287
+auN	444880.8
+L50	3
+L90	11
+# N's per 100 kbp	0.00

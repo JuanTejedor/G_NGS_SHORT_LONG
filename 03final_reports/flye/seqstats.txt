@@ -1,0 +1,7 @@
+Total n:	21
+Total seq:	3982295 bp
+Avg. seq:	189633.10 bp
+Median seq:	149310.00 bp
+N 50:		516035 bp
+Min seq:	10760 bp
+Max seq:	852783 bp
