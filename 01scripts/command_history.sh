@@ -66,3 +66,13 @@ medaka_consensus \
 -o 02results/medaka
 # ruta ensamblaje pulido: 02results/medaka/consensus.fasta
 
+###### PREGUNTA 5. ######
+# ENSAMBLAJE UNICYCLER (long + short reads)
+mkdir 02results/unicycler
+unicycler \
+-1 02results/trimmomatic/trimmed_1P.fastq \
+-2 02results/trimmomatic/trimmed_2P.fastq \
+-l 00data/bs_reads_nanopore.fastq \
+-o 02results/unicycler \
+-t 6
+# ruta ensamblaje: 02results/unicycler/assembly.fasta
