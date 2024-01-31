@@ -54,3 +54,15 @@ flye \
 -t 6 \
 -o 02results/flye
 # ruta ensamblaje: 02results/flye/assembly.fasta
+
+
+###### PREGUNTA 4. ######
+# CORRECCIÓN ENSAMBLAJE MEDAKA (long reads)
+mkdir 02results/medaka
+medaka_consensus \
+-i 00data/bs_reads_nanopore.fastq \
+-d 02results/flye/assembly.fasta \
+-t 6 \
+-o 02results/medaka
+# ruta ensamblaje pulido: 02results/medaka/consensus.fasta
+
