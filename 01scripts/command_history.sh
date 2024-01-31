@@ -109,3 +109,19 @@ quast \
 -t 10 \
 -o 02results/unicycler/quast
 seqstats 02results/unicycler/assembly.fasta > 02results/unicycler/seqstats/stats.txt
+
+
+
+
+
+
+###### PREGUNTA 8. ######
+# ANOTACIÓN CON PROKKA
+mkdir 03final_reports/prokka 
+
+prokka \
+--addgenes \
+--mincontiglen 10000 \
+--cpus 10 \
+--outdir 02results/prokka/ \
+02results/unicycler/assembly.fasta
