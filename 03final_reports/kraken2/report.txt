@@ -1,0 +1,19 @@
+  3.85	1	1	U	0	unclassified
+ 96.15	25	0	R	1	root
+ 96.15	25	0	R1	131567	  cellular organisms
+ 96.15	25	1	D	2	    Bacteria
+ 92.31	24	0	D1	1783272	      Terrabacteria group
+ 92.31	24	0	P	1239	        Firmicutes
+ 92.31	24	0	C	91061	          Bacilli
+ 92.31	24	0	O	1385	            Bacillales
+ 92.31	24	0	F	186817	              Bacillaceae
+ 92.31	24	13	G	1386	                Bacillus
+ 38.46	10	1	G1	653685	                  Bacillus subtilis group
+ 15.38	4	1	S	1423	                    Bacillus subtilis
+ 11.54	3	2	S1	135461	                      Bacillus subtilis subsp. subtilis
+  3.85	1	1	S2	1052588	                        Bacillus subtilis subsp. subtilis str. RO-NN-1
+ 11.54	3	3	S	72361	                    Bacillus vallismortis
+  3.85	1	1	S	1452	                    Bacillus atrophaeus
+  3.85	1	0	S	96241	                    Bacillus spizizenii
+  3.85	1	1	S1	1052585	                      Bacillus subtilis subsp. spizizenii TU-B-10
+  3.85	1	1	S	2487276	                  Bacillus cabrialesii

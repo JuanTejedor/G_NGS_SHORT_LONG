@@ -111,7 +111,17 @@ quast \
 seqstats 02results/unicycler/assembly.fasta > 02results/unicycler/seqstats/stats.txt
 
 
+###### PREGUNTA 7. ######
+# ANOTACIÓN CON KRAKEN2
+mkdir 02results/kraken2
+mkdir 03final_reports/kraken2
 
+kraken2 \
+--db 00data/kraken2db/ \
+--threads 10 \
+--report 02results/kraken2/report.txt \
+--output 02results/kraken2/output.txt \
+02results/unicycler/assembly.fasta
 
 
 
@@ -125,3 +135,4 @@ prokka \
 --cpus 10 \
 --outdir 02results/prokka/ \
 02results/unicycler/assembly.fasta
+

@@ -3,3 +3,4 @@
 02results/trimmomatic/log.txt
 02results/medaka/calls_to_draft.bam
 02results/medaka/consensus_probs.hdf
+00data/kraken2db/hash*.k2d
