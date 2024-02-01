@@ -7,7 +7,7 @@ System information:
   Python version: 3.9.15
   CPUs number: 12
 
-Started: 2024-01-31 19:26:31
+Started: 2024-02-01 18:45:37
 
 Logging to /home/juantejedor/G_NGS_SHORT_LONG/02results/medaka/quast/quast.log
 
@@ -20,12 +20,12 @@ Contigs:
   Pre-processing...
   02results/medaka/consensus.fasta ==> consensus
 
-2024-01-31 19:26:31
+2024-02-01 18:45:38
 Running Basic statistics processor...
   Contig files: 
     consensus
   Calculating N50 and L50...
-    consensus, N50 = 515983, L50 = 3, auN = 444880.8, Total length = 3981627, GC % = 43.92, # N's per 100 kbp =  0.00
+    consensus, N50 = 517239, L50 = 3, auN = 445909.9, Total length = 3990994, GC % = 43.87, # N's per 100 kbp =  0.00
   Drawing Nx plot...
     saved to /home/juantejedor/G_NGS_SHORT_LONG/02results/medaka/quast/basic_stats/Nx_plot.pdf
   Drawing cumulative plot...
@@ -38,14 +38,14 @@ Done.
 
 NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
 
-2024-01-31 19:26:32
+2024-02-01 18:45:38
 Creating large visual summaries...
 This may take a while: press Ctrl-C to skip this step..
   1 of 2: Creating PDF with all tables and plots...
   2 of 2: Creating Icarus viewers...
 Done
 
-2024-01-31 19:26:32
+2024-02-01 18:45:38
 RESULTS:
   Text versions of total report are saved to /home/juantejedor/G_NGS_SHORT_LONG/02results/medaka/quast/report.txt, report.tsv, and report.tex
   Text versions of transposed total report are saved to /home/juantejedor/G_NGS_SHORT_LONG/02results/medaka/quast/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
@@ -54,8 +54,8 @@ RESULTS:
   Icarus (contig browser) is saved to /home/juantejedor/G_NGS_SHORT_LONG/02results/medaka/quast/icarus.html
   Log is saved to /home/juantejedor/G_NGS_SHORT_LONG/02results/medaka/quast/quast.log
 
-Finished: 2024-01-31 19:26:32
-Elapsed time: 0:00:00.971735
+Finished: 2024-02-01 18:45:38
+Elapsed time: 0:00:01.195320
 NOTICEs: 1; WARNINGs: 1; non-fatal ERRORs: 0
 
 Thank you for using QUAST!

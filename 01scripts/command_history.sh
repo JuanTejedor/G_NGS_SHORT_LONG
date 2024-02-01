@@ -63,8 +63,10 @@ medaka_consensus \
 -i 00data/bs_reads_nanopore.fastq \
 -d 02results/flye/assembly.fasta \
 -t 6 \
+-m r941_min_hac_g507 \
 -o 02results/medaka
 # ruta ensamblaje pulido: 02results/medaka/consensus.fasta
+
 
 ###### PREGUNTA 5. ######
 # ENSAMBLAJE UNICYCLER (long + short reads)
